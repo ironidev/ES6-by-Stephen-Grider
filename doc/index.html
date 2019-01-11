@@ -65,87 +65,118 @@
                         <!-- Getting Started Start -->
                         <h1 class="uk-h1 tm-heading-fragment">Getting Started</h1>
                         <!-- Getting Started End -->
+
                         <hr class="uk-margin-large">
+
                         <!-- ES6 Start -->
-                        <h2 id="es6" class="uk-h3 tm-heading-fragment">
-                            <a href="#es6">
-                                ES6 VS ES2015
-                            </a>
-                        </h2>
-                        <div>
-                            <img src="img/ES6 vs ES205.png"/>
-                            <img src="img/ES6 vs ES2015 - 2.png"/>
+                        <div class="content">
+                            <h2 id="es6" class="uk-h3 tm-heading-fragment">
+                                <a href="#es6">
+                                    ES6 VS ES2015
+                                </a>
+                            </h2>
+    
+                            <div>
+                                <img src="img/ES6 vs ES205.png"/>
+                                <img src="img/ES6 vs ES2015 - 2.png"/>
+                            </div>
                         </div>
                         <!-- ES6 Ends -->
+
                         <hr class="uk-margin-large">
+
                         <!-- Array Helper Methods Start -->
-                        <h2 id="arrayHelper" class="uk-h3 tm-heading-fragment">
-                            <a href="#arrayHelper">
-                                Array Helper Methods
-                            </a>
-                        </h2>
-                        <div>
-                            <div class="uk-child-width-1-3 uk-text-center uk-text-bold" uk-grid>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">For Each</div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Map</div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Filter</div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Find</div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Every</div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Some</div>
-                                </div>
-                                <div>
-                                    <div class="uk-card uk-card-default uk-card-body">Reduce</div>
+                        <div class="content">
+                            <h2 id="arrayHelper" class="uk-h3 tm-heading-fragment">
+                                <a href="#arrayHelper">
+                                    Array Helper Methods
+                                </a>
+                            </h2>
+    
+                            <div>
+                                <div class="uk-child-width-1-3 uk-text-center uk-text-bold" uk-grid>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">For Each</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Map</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Filter</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Find</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Every</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Some</div>
+                                    </div>
+                                    <div>
+                                        <div class="uk-card uk-card-default uk-card-body">Reduce</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!-- Array Helper Methods Ends -->
+
                         <hr class="uk-margin-large">
+
                         <!-- for Each Start -->
-                        <h2 id="forEach" class="uk-h3 tm-heading-fragment">
-                            <a href="#forEach">
-                                For Each Helper
-                            </a>
-                        </h2>
-                        <div>
-                            <h3>Array Helper Methods - The Easiest Way to Write Better Code</h3>
-                            <div class="editormen">
-                                <pre id="editor">
+                        <div class="content">
+                            <h2 id="forEach" class="uk-h3 tm-heading-fragment">
+                                <a href="#forEach">
+                                    For Each Helper
+                                </a>
+                            </h2>
+    
+                            <div>
+    
+                                <h3>The For Each Helper</h3>
+                                
+                                <div class="content-image" style="margin-bottom: 30px">
+                                    <img src="img/04. The For Each Helper.png"/>
+                                </div>
+    
+                                <div class="editormen" style="margin-bottom: 30px">
+                                    <pre id="editor">
                                     // create an array numbers
                                     var numbers = [1, 2, 3, 4, 5, 6];
-                                    
+    
                                     // create variable to hold the sum
                                     var sum = 0;
-                                    
+    
                                     function adder(number) {
                                         sum += number;
                                     }
-                                    
+    
                                     // loop over the array, increamenting the sum variable
                                     numbers.forEach(function(number) {
                                         sum += number;
                                     });
-                                    
+    
                                     // print the sum variable
-                                    document.write(sum);
-                                </pre>
+                                    console.log(sum);
+                                    </pre>
+                                </div>
+    
+                                <div class="sandbox" style="margin-bottom: 30px">
+                                    <iframe src="https://codesandbox.io/embed/0oqyjq541v?expanddevtools=1&hidenavigation=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                                </div>
+    
+                            </div>
+    
+                            <div>
+                                <h3>Why Use For Each</h3>
+                                <div class="content-image" style="margin-bottom: 30px">
+                                    <img src="img/06. Why Use For Each.png" alt="">
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <iframe src="https://codesandbox.io/embed/2j0opk0pvr?autoresize=1&hidenavigation=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
-                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-                        </div>
+                        
                         <!-- for Each Ends -->
+
                         <!-- <hr class="uk-margin-large">
                         <h2 id="mapHelper" class="uk-h3 tm-heading-fragment">
                             <a href="#mapHelper">
@@ -260,7 +291,12 @@
         var editor = ace.edit("editor");
         editor.setTheme("ace/theme/monokai");
         editor.session.setMode("ace/mode/javascript");
-        editor.resize();
+        // use setOptions method
+        editor.setOption("displayIndentGuides", "false");
+
+        editor.setOptions({
+            maxLines: Infinity
+        });
     </script>
 </body>
 
