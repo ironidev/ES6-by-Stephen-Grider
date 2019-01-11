@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="ECMAScript-01.png">
     <link rel="stylesheet" href="css/uikit.css" />
     <link rel="stylesheet" href="css/style.css">
+    
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
 
@@ -21,7 +22,6 @@
                 <div class="uk-container">
                     <nav uk-navbar>
                         <div class="uk-navbar-left">
-
                             <a class="uk-navbar-item uk-logo" href="#">
                                 <svg width="40" height="40" style="margin-right: 25px;" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg"
                                     preserveAspectRatio="xMinYMin meet">
@@ -29,8 +29,6 @@
                                     <path d="M105.536 159.959h39.157v-10.653h-27.064v-16.507h24.953v-10.653h-24.953v-15.452h27.064V96.041h-39.157v63.918zm91.462-17.371c0-12.765-.864-15.548-18.043-19.675-11.037-2.687-11.229-2.879-11.229-10.173 0-5.566 1.44-7.294 9.598-7.294 5.566 0 11.804.768 17.083 1.92l1.344-10.173c-6.335-1.44-13.053-2.112-18.62-2.112-16.219 0-21.497 5.759-21.497 17.371 0 13.533 2.111 16.508 17.563 19.963 11.517 2.495 11.709 3.07 11.709 10.173 0 6.142-1.44 7.966-10.174 7.966-6.334 0-12.092-1.152-18.042-2.976l-2.112 9.502c4.223 2.015 12.669 3.839 19.963 3.839 18.906 0 22.457-6.239 22.457-18.331zm22.266-23.801c0-9.79 4.703-11.71 16.027-11.71 2.016 0 6.239.289 9.022.865l.768-9.79c-2.88-.671-7.486-1.151-11.037-1.151-17.467 0-26.489 5.374-26.489 22.265v23.322c0 11.037 3.263 18.33 19.77 18.33 15.068 0 19.675-7.485 19.675-17.466v-4.607c0-11.037-4.703-15.836-16.315-15.836-4.127 0-8.062.576-11.421 1.728v-5.95zm9.597 14.3c4.223 0 6.43 1.44 6.43 6.046v4.703c0 4.894-1.92 7.006-7.965 7.006-6.047 0-8.062-1.728-8.062-7.006v-8.734c2.687-1.152 6.142-2.015 9.597-2.015z"
                                         fill="#F26522" /></svg> ES6 by Stephen Grider
                             </a>
-
-
                         </div>
                     </nav>
                 </div>
@@ -41,7 +39,8 @@
             <div uk-sticky="offset: 160">
                 <h3>Documentation</h3>
                 <ul class="uk-nav uk-nav-default tm-nav" uk-scrollspy-nav="closest: li; scroll: true;  offset: 160">
-                    <li><a href="#arrayHelper">Hello ES6!</a></li>
+                    <li><a href="#es6">Hello ES6!</a></li>
+                    <li><a href="#arrayHelper">Array Helper Methods</a></li>
                     <li><a href="#forEach">For Each Helper</a></li>
                     <li><a href="#mapHelper">Map Helper</a></li>
                     <li><a href="#filterHelper">Filter Helper</a></li>
@@ -63,7 +62,23 @@
                 <div>
                     <!---->
                     <div>
-                        <h1 class="uk-h1 tm-heading-fragment">The forEach Helper</h1>
+                        <!-- Getting Started Start -->
+                        <h1 class="uk-h1 tm-heading-fragment">Getting Started</h1>
+                        <!-- Getting Started End -->
+                        <hr class="uk-margin-large">
+                        <!-- ES6 Start -->
+                        <h2 id="es6" class="uk-h3 tm-heading-fragment">
+                            <a href="#es6">
+                                ES6 VS ES2015
+                            </a>
+                        </h2>
+                        <div>
+                            <img src="img/ES6 vs ES205.png"/>
+                            <img src="img/ES6 vs ES2015 - 2.png"/>
+                        </div>
+                        <!-- ES6 Ends -->
+                        <hr class="uk-margin-large">
+                        <!-- Array Helper Methods Start -->
                         <h2 id="arrayHelper" class="uk-h3 tm-heading-fragment">
                             <a href="#arrayHelper">
                                 Array Helper Methods
@@ -94,17 +109,44 @@
                                 </div>
                             </div>
                         </div>
+                        <!-- Array Helper Methods Ends -->
                         <hr class="uk-margin-large">
+                        <!-- for Each Start -->
                         <h2 id="forEach" class="uk-h3 tm-heading-fragment">
                             <a href="#forEach">
                                 For Each Helper
                             </a>
                         </h2>
                         <div>
+                            <h3>Array Helper Methods - The Easiest Way to Write Better Code</h3>
+                            <div class="editormen">
+                                <pre id="editor">
+                                    // create an array numbers
+                                    var numbers = [1, 2, 3, 4, 5, 6];
+                                    
+                                    // create variable to hold the sum
+                                    var sum = 0;
+                                    
+                                    function adder(number) {
+                                        sum += number;
+                                    }
+                                    
+                                    // loop over the array, increamenting the sum variable
+                                    numbers.forEach(function(number) {
+                                        sum += number;
+                                    });
+                                    
+                                    // print the sum variable
+                                    document.write(sum);
+                                </pre>
+                            </div>
+                        </div>
+                        <div>
                             <iframe src="https://codesandbox.io/embed/2j0opk0pvr?autoresize=1&hidenavigation=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
                                 sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
-                        <hr class="uk-margin-large">
+                        <!-- for Each Ends -->
+                        <!-- <hr class="uk-margin-large">
                         <h2 id="mapHelper" class="uk-h3 tm-heading-fragment">
                             <a href="#mapHelper">
                                 Map Helper
@@ -121,7 +163,8 @@
                             </a>
                         </h2>
                         <div>
-                            <iframe src="https://codesandbox.io/embed/6v089xjylz?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            <iframe src="https://codesandbox.io/embed/6v089xjylz?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="findHelper" class="uk-h3 tm-heading-fragment">
@@ -130,7 +173,8 @@
                             </a>
                         </h2>
                         <div>
-                            <iframe src="https://codesandbox.io/embed/10rnym9744?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            <iframe src="https://codesandbox.io/embed/10rnym9744?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="everyAndSomeHelper" class="uk-h3 tm-heading-fragment">
@@ -139,7 +183,8 @@
                             </a>
                         </h2>
                         <div>
-                            <iframe src="https://codesandbox.io/embed/qxvy17w7vq?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            <iframe src="https://codesandbox.io/embed/qxvy17w7vq?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="reduceHelper" class="uk-h3 tm-heading-fragment">
@@ -148,7 +193,8 @@
                             </a>
                         </h2>
                         <div>
-                            <iframe src="https://codesandbox.io/embed/535kmv2vvn?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            <iframe src="https://codesandbox.io/embed/535kmv2vvn?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="constLet" class="uk-h3 tm-heading-fragment">
@@ -157,7 +203,8 @@
                             </a>
                         </h2>
                         <div>
-                            <iframe src="https://codesandbox.io/embed/6vk5229jp3?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            <iframe src="https://codesandbox.io/embed/6vk5229jp3?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="templateString" class="uk-h3 tm-heading-fragment">
@@ -166,7 +213,8 @@
                             </a>
                         </h2>
                         <div>
-                                <iframe src="https://codesandbox.io/embed/znm9q4m59m?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            <iframe src="https://codesandbox.io/embed/znm9q4m59m?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="arrowFunction" class="uk-h3 tm-heading-fragment">
@@ -175,7 +223,8 @@
                             </a>
                         </h2>
                         <div>
-                                <iframe src="https://codesandbox.io/embed/rryp47y364?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                            <iframe src="https://codesandbox.io/embed/rryp47y364?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="objectLiterals" class="uk-h3 tm-heading-fragment">
@@ -183,8 +232,9 @@
                                 Object Literals
                             </a>
                         </h2>
-                        <div>   
-                            <iframe src="https://codesandbox.io/embed/4044p0959w?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                        <div>
+                            <iframe src="https://codesandbox.io/embed/4044p0959w?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
                         </div>
                         <hr class="uk-margin-large">
                         <h2 id="functionArgument" class="uk-h3 tm-heading-fragment">
@@ -193,8 +243,9 @@
                             </a>
                         </h2>
                         <div>
-                            <iframe src="https://codesandbox.io/embed/z6pvnw09jx?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
-                        </div>
+                            <iframe src="https://codesandbox.io/embed/z6pvnw09jx?autoresize=1&expanddevtools=1" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+                                sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+                        </div> -->
                     </div>
                 </div>
 
@@ -203,6 +254,14 @@
 
 
     </div>
+
+    <script src="js/src-min-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+        var editor = ace.edit("editor");
+        editor.setTheme("ace/theme/monokai");
+        editor.session.setMode("ace/mode/javascript");
+        editor.resize();
+    </script>
 </body>
 
 </html>
